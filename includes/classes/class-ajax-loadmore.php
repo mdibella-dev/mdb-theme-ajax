@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Generic class for implementing AJAX-driven 'LoadMore' elements.
  *
- * @since 1.7.0
+ * @since 1.0.0
  * @todo  Integrate shortcode functionality.
  */
 
@@ -25,7 +25,7 @@ abstract class AJAX_LoadMore
     /**
      * Reads in the HTML template for dynamic output and returns it for storage.
      *
-     * @since 1.7.0
+     * @since 1.0.0
      * @param string $filename    The filename of the template.
      */
 
@@ -53,7 +53,7 @@ abstract class AJAX_LoadMore
     /**
      * Returns the (saved) HTML template for the dynamic output.
      *
-     * @since  1.7.0
+     * @since 1.0.0
      * @return string    The HTML template.
      */
 
@@ -63,7 +63,7 @@ abstract class AJAX_LoadMore
     /**
      * Returns the content (generated depending on the specific post) to be replaced in the HTML template.
      *
-     * @since  1.7.0
+     * @since  1.0.0
      * @param  WP_POST $post    The post (aka record) to generate the replacements for.
      * @return array            An associative array containing the replacement terms.
      */
@@ -74,7 +74,7 @@ abstract class AJAX_LoadMore
     /**
      * Determines the dynamically adding contributions (records).
      *
-     * @since  1.7.0
+     * @since  1.0.0
      * @param  array $params    The LoadMore parameters.
      * @return array            An array of matching WP_POST objects.
      */
@@ -85,7 +85,7 @@ abstract class AJAX_LoadMore
     /**
      * Returns an array containing the LoadMore parameters (as key) and their default values ​​(as value).
      *
-     * @since 1.7.0
+     * @since 1.0.0
      * @return array    The array.
      */
 
@@ -109,7 +109,7 @@ abstract class AJAX_LoadMore
     /**
      * Generates the dynamic output.
      *
-     * @since  1.7.0
+     * @since  1.0.0
      * @param  array  $params    The LoadMore parameters.
      * @return string            The output.
      */
@@ -147,7 +147,7 @@ abstract class AJAX_LoadMore
     /**
      * Determines the LoadMore parameters submitted via $_POST and then calls render_dynamic_content().
      *
-     * @since 1.7.0
+     * @since 1.0.0
      */
 
     static function handle_AJAX() {

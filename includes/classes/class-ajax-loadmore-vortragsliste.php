@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Class for AJAX-driven presentation of lectures.
  *
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
@@ -24,7 +24,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
     /**
      * HTML template for dynamic output.
      *
-     * @since 1.7.0
+     * @since 1.0.0
      * @var   string
      */
 
@@ -34,7 +34,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
     /**
      * A (static) constructor; sets the basic class parameters.
      *
-     * @since 1.7.0
+     * @since 1.0.0
      */
 
     static function __constructStatic()
@@ -46,7 +46,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
     /**
      * Returns the (saved) HTML template for the dynamic output.
      *
-     * @since  1.7.0
+     * @since  1.0.0
      * @return string    The HTML template.
      */
 
@@ -58,7 +58,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
     /**
      * Determines the dynamically adding contributions (records).
      *
-     * @since  1.7.0
+     * @since  1.0.0
      * @param  array $params    The LoadMore parameters.
      * @return array            An array of matching WP_POST objects.
      */
@@ -81,7 +81,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
     /**
      * Returns the content (generated depending on the specific post) to be replaced in the HTML template.
      *
-     * @since  1.7.0
+     * @since  1.0.0
      * @param  WP_POST $post    The post (aka record) to generate the replacements for.
      * @return array            An associative array containing the replacement terms.
      */
