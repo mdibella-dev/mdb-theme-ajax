@@ -43,7 +43,7 @@ register_deactivation_hook( __FILE__, 'mdb_ajax__plugin_deactivation' );
 /**
  * Load the frontend scripts and styles.
  *
- * @since X.0.0
+ * @since 1.0.0
  */
 
 function mdb_tc_enqueue_scripts()
