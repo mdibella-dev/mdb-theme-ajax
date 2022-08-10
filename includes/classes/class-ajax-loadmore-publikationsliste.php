@@ -2,7 +2,7 @@
 /**
  * Class AJAX_LoadMore_Publikationsliste
  *
- * @author  Marco Di Bella <mdb@marcodibella.de>
+ * @author  Marco Di Bella
  * @package mdb_theme_ajax
  */
 

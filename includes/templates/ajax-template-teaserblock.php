@@ -2,7 +2,7 @@
 /**
  * A template file for AJAX driven content.
  *
- * @author  Marco Di Bella <mdb@marcodibella.de>
+ * @author  Marco Di Bella 
  * @package mdb_theme_ajax
  */
 ?>

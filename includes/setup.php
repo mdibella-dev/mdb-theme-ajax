@@ -2,7 +2,7 @@
 /**
  * Functions to activate, initiate and deactivate the plugin.
  *
- * @author  Marco Di Bella <mdb@marcodibella.de>
+ * @author  Marco Di Bella
  * @package mdb_theme_ajax
  */
 

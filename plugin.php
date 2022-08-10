@@ -8,7 +8,7 @@
  * Text Domain:     mdb_ajax
  * Domain Path:     /languages
  *
- * @author  Marco Di Bella <mdb@marcodibella.de>
+ * @author  Marco Di Bella
  * @package mdb_theme_ajax
  */
 

@@ -2,7 +2,7 @@
 /**
  * Class AJAX_LoadMore_Teaserblock
  *
- * @author  Marco Di Bella <mdb@marcodibella.de>
+ * @author  Marco Di Bella
  * @package mdb_theme_ajax
  */
 
