@@ -13,16 +13,20 @@
  */
 
 
+/** Prevent direct access */
+
 defined( 'ABSPATH' ) or exit;
 
 
 
 /** Variables and definitions **/
 
-$plugin_path = plugin_dir_path( __FILE__ );
+$plugin_version = '1.0.0';
+$plugin_path    = plugin_dir_path( __FILE__ );
 
 
-/** Include function library */
+
+/** Include files */
 
 require_once( $plugin_path . '/includes/classes/class-ajax-loadmore.php' );
 require_once( $plugin_path . '/includes/classes/class-ajax-loadmore-teaserblock.php' );
