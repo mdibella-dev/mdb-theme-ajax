@@ -2,10 +2,12 @@
 /**
  * Class AJAX_LoadMore_Vortragsliste
  *
- * @author  Marco Di Bella 
+ * @author  Marco Di Bella
  * @package mdb_theme_ajax
  */
 
+
+/** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;
 

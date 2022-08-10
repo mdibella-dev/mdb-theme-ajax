@@ -2,10 +2,12 @@
 /**
  * The shortcode [publikationsliste].
  *
- * @author  Marco Di Bella 
+ * @author  Marco Di Bella
  * @package mdb_theme_ajax
  */
 
+
+/** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;
 
