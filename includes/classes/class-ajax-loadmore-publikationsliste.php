@@ -66,12 +66,12 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
     static function get_posts( $params )
     {
         $tax_query     = array(
-            'taxonomy' => 'publication_group',
+            'taxonomy' => 'publikation_kategorie',
             'terms'    => explode( ',', $params['form'] )
         );
 
         $posts = get_posts( array(
-            'post_type'      => 'publication',
+            'post_type'      => 'publikation',
             'post_status'    => 'publish',
             'posts_per_page' => $params['show'],
             'order'          => 'DESC',

@@ -66,7 +66,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore
     static function get_posts( $params )
     {
         $posts = get_posts( array(
-            'post_type'      => 'lecture',
+            'post_type'      => 'vortrag',
             'post_status'    => 'publish',
             'posts_per_page' => $params['show'],
             'order'          => 'DESC',
