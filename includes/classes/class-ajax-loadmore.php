@@ -213,8 +213,13 @@ abstract class AJAX_LoadMore
                         <div class="sk-bounce-dot"></div>
                     </div>
                 </div>
-
-                <button class="button loadmore-button" data-parentid="<?php echo $params['id']; ?>" target="_self"><?php echo __( 'Show more', 'mdb_ajax' ); ?></button>
+                <div class="wp-block-buttons">
+                    <div class="wp-block-button loadmore-button" data-parentid="<?php echo $params['id']; ?>">
+                        <a class="wp-block-button__link" href="#" target="_self">
+                            <?php echo __( 'Show more', 'mdb_ajax' ); ?>
+                        </a>
+                    </div>
+                </div>
             </div>
             <?php
             endif;
