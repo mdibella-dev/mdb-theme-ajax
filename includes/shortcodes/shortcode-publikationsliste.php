@@ -42,12 +42,12 @@ function mdb_ajax__shortcode_publikationsliste( $atts, $content = null )
 
     // Get the total number of items
     $tax_query = array(
-        'taxonomy' => 'publikation_kategorie',
+        'taxonomy' => 'publication_group',
         'terms'    => explode( ',', $form )
     );
 
     $max = sizeof( get_posts( array(
-        'post_type'      => 'publikation',
+        'post_type'      => 'publication',
         'post_status'    => 'publish',
         'posts_per_page' => -1,
         'order'          => 'DESC',

@@ -41,7 +41,7 @@ function mdb_ajax__shortcode_vortragsliste( $atts, $content = null )
 
     // Get the total number of items
     $max = sizeof( get_posts( array(
-        'post_type'      => 'vortrag',
+        'post_type'      => 'lecture',
         'post_status'    => 'publish',
         'posts_per_page' => -1,
         'order'          => 'DESC',
