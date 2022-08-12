@@ -150,7 +150,8 @@ abstract class AJAX_LoadMore
      * @since 1.0.0
      */
 
-    static function handle_AJAX() {
+    static function handle_AJAX()
+    {
         $default = static::get_default_params();
         $params  = array();
 
@@ -161,4 +162,71 @@ abstract class AJAX_LoadMore
         echo self::render_dynamic_content( $params );
         die();
     }
+
+
+    /**
+     * Generates the output.
+     *
+     * @since 1.1.0
+     */
+
+    static function prepare_output( $params, $ajax )
+    {
+        $output = '';
+
+
+        if( ! empty( $ajax ) ) :
+
+            // Correct information for the following page
+            if( ( 'true' === $params['paged'] ) and ( 1 !== $params['maxpage'] ) ):
+                $params['nextpage'] = 2;
+            endif;
+
+
+            // Generate 'data' values
+            $data = '';
+
+            foreach( $params as $data_key => $data_value ) :
+                $data .= sprintf(
+                    ' data-%1$s="%2$s"',
+                    $data_key,
+                    $data_value
+                );
+            endforeach;
+
+
+            // Start rendering
+            ob_start();
+            ?>
+            <div id="<?php echo $params['id']; ?>" class="loadmore <?php echo $params['action']; ?>" <?php echo $data; ?>>
+            <div class="loadmore-content">
+                <?php echo $ajax; ?>
+            </div>
+            <?php
+            // Show LoadMore button if required
+            if( ( 'true' === $params['paged'] ) ) :
+            ?>
+            <div class="loadmore-action-wrapper">
+                <div class="loadmore-spinner">
+                    <div class="sk-bounce">
+                        <div class="sk-bounce-dot"></div>
+                        <div class="sk-bounce-dot"></div>
+                    </div>
+                </div>
+
+                <button class="button loadmore-button" data-parentid="<?php echo $params['id']; ?>" target="_self"><?php echo __( 'Show more', 'mdb_ajax' ); ?></button>
+            </div>
+            <?php
+            endif;
+            ?>
+            </div>
+            <?php
+            $output = ob_get_contents();
+            ob_end_clean();
+        endif;
+
+        return $output;
+    }
+
+
 }

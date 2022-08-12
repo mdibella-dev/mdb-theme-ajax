@@ -65,8 +65,9 @@ function mdb_ajax__shortcode_teaserblock( $atts, $content = null )
     $params['maxpage']  = 1;
     $params['nextpage'] = 1;
     $params['paged']    = strtolower( $paged );
+    $params['id']       = sprintf( 'loadmore_%1$s', random_int( 1000, 9999 ) );
 
-    if( 'true' === $paged ) :
+    if( 'true' === $params['paged'] ) :
         $params['show']    = get_option( 'posts_per_page' );  // always take the information from the backend.
         $params['maxpage'] = (int) ceil( $max / $params['show'] );
     endif;
@@ -79,56 +80,7 @@ function mdb_ajax__shortcode_teaserblock( $atts, $content = null )
     // Get the content of the first 'page'
     $ajax = AJAX_LoadMore_Teaserblock::render_dynamic_content( $params );
 
-    if( ! empty( $ajax ) ) :
-
-        // Correct information for the following page
-        if( ( 'true' === $paged ) and ( 1 !== $params['maxpage'] ) ):
-            $params['nextpage'] = 2;
-        endif;
-
-
-        // Generate 'data' values
-        $data = '';
-
-        foreach( $params as $data_key => $data_value ) :
-            $data .= sprintf(
-                ' data-%1$s="%2$s"',
-                $data_key,
-                $data_value
-            );
-        endforeach;
-
-
-        // Start rendering
-        ob_start();
-?>
-<div id="<?php echo $id; ?>" class="loadmore <?php echo $params['action']; ?>" <?php echo $data; ?>>
-    <div class="loadmore-content">
-        <?php echo $ajax; ?>
-    </div>
-        <?php
-        // Show LoadMore button if required
-        if( ( 'true' === $paged ) and ( $params['nextpage'] !== $params['maxpage'] ) ) :
-        ?>
-    <div class="loadmore-action-wrapper">
-        <div class="loadmore-spinner">
-            <div class="sk-bounce">
-                <div class="sk-bounce-dot"></div>
-                <div class="sk-bounce-dot"></div>
-            </div>
-        </div>
-        <button class="button loadmore-button" data-parentid="<?php echo $id; ?>" target="_self"><?php echo __( 'Mehr laden', 'mdb_ajax' ); ?></button>
-    </div>
-        <?php
-        endif;
-        ?>
-</div>
-<?php
-        $output = ob_get_contents();
-        ob_end_clean();
-    endif;
-
-    return $output;
+    return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
 add_shortcode( 'teaserblock', 'mdb_ajax__shortcode_teaserblock' );
