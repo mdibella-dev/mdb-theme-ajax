@@ -122,6 +122,8 @@ function mdb_ajax__shortcode_publikationsliste( $atts, $content = null )
     ?>
 </div>
 <?php
+/ Start rendering
+ob_start();
         $output = ob_get_contents();
         ob_end_clean();
     endif;
