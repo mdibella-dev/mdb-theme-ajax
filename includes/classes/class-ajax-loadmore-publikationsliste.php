@@ -100,7 +100,7 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
         $replacements = array(
             '_PUBTITLE_'     => $part[0],
             '_PUBCITE_'      => $part[1],
-            '_SHOW_DETAILS_' => __( 'Zeige Details', 'mdb_ajax' ),
+            '_SHOW_DETAILS_' => __( 'Show details', 'mdb_ajax' ),
             '_DETAILS_'      => __( 'Details', 'mdb_ajax' ),
             '_ID_'           => $post->ID,
             '_LINK_'         => get_permalink( $post->ID ),
