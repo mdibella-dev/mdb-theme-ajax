@@ -3,7 +3,7 @@
  * Plugin Name:     Marco Di Bella - AJAX
  * Author:          Marco Di Bella
  * Author URI:      https://www.marcodibella.de
- * Description:     AJAX driven shortcodes and classes for displaying lectures, publications and blog articles. Intended to use with the theme mdb-theme.
+ * Description:     AJAX driven shortcodes and classes for displaying lectures, publications and blog articles. Intended to use with the theme mdb-theme-fse.
  * Version:         1.0.0
  * Text Domain:     mdb_theme_ajax
  * Domain Path:     /languages
