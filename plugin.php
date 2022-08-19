@@ -5,7 +5,7 @@
  * Author URI:      https://www.marcodibella.de
  * Description:     AJAX driven shortcodes and classes for displaying lectures, publications and blog articles. Intended to use with the theme mdb-theme.
  * Version:         1.0.0
- * Text Domain:     mdb_ajax
+ * Text Domain:     mdb_theme_ajax
  * Domain Path:     /languages
  *
  * @author  Marco Di Bella
@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) or exit;
 
 /** Variables and definitions **/
 
-$plugin_version = '1.0.0';
+$plugin_version = '1.1.0';
 $plugin_path    = plugin_dir_path( __FILE__ );
 
 
