@@ -48,7 +48,7 @@ register_deactivation_hook( __FILE__, 'mdb_ajax__plugin_deactivation' );
  * @since 1.0.0
  */
 
-function mdb_tc_enqueue_scripts()
+function mdb_ajax__enqueue_scripts()
 {
     wp_enqueue_script(
         'ajax',
@@ -65,7 +65,7 @@ function mdb_tc_enqueue_scripts()
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'mdb_tc_enqueue_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', 'mdb_ajax__enqueue_scripts', 9999 );
 
 
 
@@ -75,10 +75,10 @@ add_action( 'wp_enqueue_scripts', 'mdb_tc_enqueue_scripts', 9999 );
  * @since 1.0.0
  */
 
-function mdb_ajax_plugin_init()
+function mdb_ajax__plugin_init()
 {
     // Load text domain
     load_plugin_textdomain( 'mdb-ajax', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
-add_action( 'init', 'mdb_ajax_plugin_init' );
+add_action( 'init', 'mdb_ajax__plugin_init' );
