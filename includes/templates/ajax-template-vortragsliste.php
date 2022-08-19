@@ -2,8 +2,8 @@
 /**
  * A template file for AJAX driven content.
  *
- * @author  Marco Di Bella 
- * @package mdb_theme_ajax
+ * @author  Marco Di Bella
+ * @package mdb-theme-ajax
  */
 ?>
 

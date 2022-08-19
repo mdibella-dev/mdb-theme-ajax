@@ -3,7 +3,7 @@
  * The shortcode [vortragsliste].
  *
  * @author  Marco Di Bella
- * @package mdb-theme-core
+ * @package mdb-theme-ajax
  */
 
 namespace mdb_theme_ajax;

@@ -3,7 +3,7 @@
  * Functions to activate, initiate and deactivate the plugin.
  *
  * @author  Marco Di Bella
- * @package mdb_theme_ajax
+ * @package mdb-theme-ajax
  */
 
 namespace mdb_theme_ajax;

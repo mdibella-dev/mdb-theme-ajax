@@ -3,7 +3,7 @@
  * Class AJAX_LoadMore_Teaserblock
  *
  * @author  Marco Di Bella
- * @package mdb_theme_ajax
+ * @package mdb-theme-ajax
  */
 
 namespace mdb_theme_ajax;
