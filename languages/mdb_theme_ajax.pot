@@ -1,15 +1,15 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Marco Di Bella - AJAX\n"
-"POT-Creation-Date: 2022-08-19 09:56+0200\n"
-"PO-Revision-Date: 2022-08-19 09:56+0200\n"
+"POT-Creation-Date: 2022-08-19 09:50+0200\n"
+"PO-Revision-Date: 2022-08-19 09:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -23,37 +23,34 @@ msgstr ""
 
 #: includes/classes/class-ajax-loadmore-publikationsliste.php:105
 msgid "Show details"
-msgstr "Zeige Details"
+msgstr ""
 
 #: includes/classes/class-ajax-loadmore-publikationsliste.php:106
 msgid "Details"
-msgstr "Details"
+msgstr ""
 
 #: includes/classes/class-ajax-loadmore-teaserblock.php:100
 msgid "More"
-msgstr "Mehr"
+msgstr ""
 
 #: includes/classes/class-ajax-loadmore.php:220
 msgid "Show more"
-msgstr "Zeige mehr"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "Marco Di Bella - AJAX"
-msgstr "Marco Di Bella - AJAX"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
 "AJAX driven shortcodes and classes for displaying lectures, publications and "
-"blog articles. Intended to use with the theme mdb-theme-fse."
+"blog articles. Intended to use with the theme mdb-theme."
 msgstr ""
-"AJAX-getriebene Shortcodes und Klassen um Vorträge, Publikationen und "
-"Blogbeiträge aufzulisten. Zum Gebrauch vorgesehen mit dem Theme mdb-theme-"
-"fse."
 
 #. Author of the plugin/theme
 msgid "Marco Di Bella"
-msgstr "Marco Di Bella"
+msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
-msgstr "https://www.marcodibella.de"
+msgstr ""
