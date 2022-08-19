@@ -81,7 +81,7 @@ add_action( 'wp_enqueue_scripts', 'mdb_theme_ajax\enqueue_scripts', 9999 );
 function plugin_init()
 {
     // Load text domain
-    load_plugin_textdomain( 'mdb-ajax', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+    load_plugin_textdomain( 'mdb_theme_ajax', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'init', 'mdb_theme_ajax\plugin_init' );
