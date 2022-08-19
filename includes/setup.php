@@ -66,3 +66,19 @@ function mdb_tc_enqueue_scripts()
 }
 
 add_action( 'wp_enqueue_scripts', 'mdb_tc_enqueue_scripts', 9999 );
+
+
+
+/**
+ * The init function for the plugin.
+ *
+ * @since 1.0.0
+ */
+
+function mdb_ajax_plugin_init()
+{
+    // Load text domain
+    load_plugin_textdomain( 'mdb-ajax', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+
+add_action( 'init', 'mdb_ajax_plugin_init' );
