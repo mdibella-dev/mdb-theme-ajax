@@ -137,7 +137,7 @@ abstract class AJAX_LoadMore
 
             // Improve typography (when plugin wp-typography is loaded)
             if( class_exists( 'WP_Typography' ) ) :
-                $output = WP_Typography::process_title( $output );
+                $output = \WP_Typography::process_title( $output );
             endif;
 
         endif;
