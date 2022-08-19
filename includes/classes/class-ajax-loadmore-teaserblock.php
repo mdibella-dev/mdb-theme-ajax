@@ -97,7 +97,7 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
         $replacements = array(
             '_CLASS_'     => implode( ' ', apply_filters( 'post_class', get_post_class( $post->ID ), '', $post->ID ) ),
             '_PERMALINK_' => get_permalink( $post->ID ),
-            '_LINKTITLE_' => __( 'More', 'mdb_ajax' ),
+            '_LINKTITLE_' => __( 'More', 'mdb_theme_ajax' ),
             '_IMAGE_'     => get_the_post_thumbnail( $post->ID, 'medium' ),
             '_TITLE_'     => get_the_title( $post->ID ),
         );
