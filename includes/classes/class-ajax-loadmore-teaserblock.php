@@ -6,6 +6,8 @@
  * @package mdb_theme_ajax
  */
 
+namespace mdb_theme_ajax;
+
 
 /** Prevent direct access */
 

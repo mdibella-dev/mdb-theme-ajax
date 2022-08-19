@@ -6,6 +6,8 @@
  * @package mdb-theme-core
  */
 
+namespace mdb_theme_ajax;
+
 
 /** Prevent direct access */
 
@@ -22,7 +24,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string             The output.
  */
 
-function mdb_ajax__shortcode_vortragsliste( $atts, $content = null )
+function shortcode_vortragsliste( $atts, $content = null )
 {
     // Set variables
     $output = '';
@@ -69,4 +71,4 @@ function mdb_ajax__shortcode_vortragsliste( $atts, $content = null )
     return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
-add_shortcode( 'vortragsliste', 'mdb_ajax__shortcode_vortragsliste' );
+add_shortcode( 'vortragsliste', 'mdb_theme_ajax\shortcode_vortragsliste' );

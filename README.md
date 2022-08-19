@@ -14,7 +14,9 @@ __Tested up to:__ WordPress 6.0
 
 
 ### 1.1.0
-* Add: prepare_output() in class AJAX_LoadMore
+* Added: prepare_output() in class AJAX_LoadMore
+* Added: namespace mdb_theme_ajax
+* Added: translation support
 
 
 ### 1.0.0

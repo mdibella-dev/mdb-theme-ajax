@@ -6,6 +6,8 @@
  * @package mdb_theme_ajax
  */
 
+namespace mdb_theme_ajax;
+
 
 /** Prevent direct access */
 
@@ -22,7 +24,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string             The output.
  */
 
-function mdb_ajax__shortcode_teaserblock( $atts, $content = null )
+function shortcode_teaserblock( $atts, $content = null )
 {
     // Set variables
     $output = '';
@@ -83,4 +85,4 @@ function mdb_ajax__shortcode_teaserblock( $atts, $content = null )
     return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
-add_shortcode( 'teaserblock', 'mdb_ajax__shortcode_teaserblock' );
+add_shortcode( 'teaserblock', 'mdb_theme_ajax\shortcode_teaserblock' );
