@@ -138,8 +138,8 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
 
 }
 
-add_action( 'wp_ajax_publikationsliste', array( 'AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
-add_action( 'wp_ajax_nopriv_publikationsliste', array( 'AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
+add_action( 'wp_ajax_publikationsliste', array( 'mdb_theme_ajax\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
+add_action( 'wp_ajax_nopriv_publikationsliste', array( 'mdb_theme_ajax\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
 
 
 AJAX_LoadMore_Publikationsliste::__constructStatic();
