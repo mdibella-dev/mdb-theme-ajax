@@ -75,10 +75,6 @@ function shortcode_teaserblock( $atts, $content = null )
     endif;
 
 
-    // Generate id to allow multiple instances of the shortcode
-    $id = sprintf( 'loadmore_%1$s', random_int( 1000, 9999 ) );
-
-
     // Get the content of the first 'page'
     $ajax = AJAX_LoadMore_Teaserblock::render_dynamic_content( $params );
 
