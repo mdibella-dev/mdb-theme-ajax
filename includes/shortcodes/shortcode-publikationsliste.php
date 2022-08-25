@@ -73,7 +73,7 @@ function shortcode_publikationsliste( $atts, $content = null )
     endif;
 
 
-    //  Get the content of the first 'page'
+    // Get the content of the first 'page'
     $ajax = AJAX_LoadMore_Publikationsliste::render_dynamic_content( $params );
 
     return AJAX_LoadMore::prepare_output( $params, $ajax );
