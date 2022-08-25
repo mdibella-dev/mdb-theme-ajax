@@ -122,15 +122,15 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
     static function get_default_params()
     {
         $default = array(
-            'paged'     => 'false',
-            'show'      => '',
-            'exclude'   => '',
-            'orderby'   => 'publish_date',
-            'cat'       => 0,
-            'tag'       => 0,
-            'maxpage'   => 1,
-            'nextpage'  => 1,
-            'form'      => '',          // publication form!
+            'paged'    => 'false',
+            'show'     => '',
+            'exclude'  => '',
+            'orderby'  => 'publish_date',
+            'cat'      => 0,
+            'tag'      => 0,
+            'maxpage'  => 1,
+            'nextpage' => 1,
+            'form'     => '',          // publication form!
         );
 
         return $default;
