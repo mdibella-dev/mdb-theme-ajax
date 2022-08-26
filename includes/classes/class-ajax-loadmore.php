@@ -94,14 +94,14 @@ abstract class AJAX_LoadMore
     static function get_default_params()
     {
         $default = array(
-            'paged'     => 'false',
-            'show'      => '',
-            'exclude'   => '',
-            'orderby'   => 'publish_date',
-            'cat'       => 0,
-            'tag'       => 0,
-            'maxpage'   => 1,
-            'nextpage'  => 1
+            'paged'    => 'false',
+            'show'     => '',
+            'exclude'  => '',
+            'orderby'  => 'publish_date',
+            'cat'      => 0,
+            'tag'      => 0,
+            'maxpage'  => 1,
+            'nextpage' => 1
         );
 
         return $default;
@@ -121,6 +121,10 @@ abstract class AJAX_LoadMore
         $output = '';
         $posts  = static::get_posts( $params );
 
+        $count  = 1;
+        $offset = ($params['nextpage'] - 1) * $params['show'];
+
+
         if( $posts) :
 
             // Loop through all posts
@@ -128,12 +132,16 @@ abstract class AJAX_LoadMore
                 $buffer       = static::get_template();
                 $replacements = static::get_replacements( $post );
 
+                $replacements['_NR_'] = $count + $offset;
+
                 foreach( $replacements as $placeholder => $replacement ) :
                     $buffer = str_replace( $placeholder, $replacement, $buffer );
                 endforeach;
 
+                $count++;
                 $output .= $buffer;
             endforeach;
+
 
             // Improve typography (when plugin wp-typography is loaded)
             if( class_exists( 'WP_Typography' ) ) :
@@ -161,6 +169,8 @@ abstract class AJAX_LoadMore
             $params[$key] = $_POST[$key];
         endforeach;
 
+        //$params['page'] = 1 + (int) $params['page'];
+
         echo self::render_dynamic_content( $params );
         die();
     }
@@ -184,7 +194,6 @@ abstract class AJAX_LoadMore
                 $params['nextpage'] = 2;
             endif;
 
-
             // Generate 'data' values
             $data = '';
 
@@ -199,6 +208,7 @@ abstract class AJAX_LoadMore
 
             // Start rendering
             ob_start();
+
             ?>
             <div id="<?php echo $params['id']; ?>" class="loadmore <?php echo $params['action']; ?>" <?php echo $data; ?>>
             <div class="loadmore-content">
