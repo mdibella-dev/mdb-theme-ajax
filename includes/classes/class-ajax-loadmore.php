@@ -216,7 +216,7 @@ abstract class AJAX_LoadMore
             </div>
             <?php
             // Show LoadMore button if required
-            if( ( 'true' === $params['paged'] ) and ( $params['maxpage'] !== $params['nextpage'] ) ) :
+            if( ( 'true' === $params['paged'] ) and ( 1 !== $params['nextpage'] ) ) :
             ?>
             <div class="loadmore-action-wrapper">
                 <div class="loadmore-spinner">
@@ -242,6 +242,5 @@ abstract class AJAX_LoadMore
 
         return $output;
     }
-
 
 }
