@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name:     Marco Di Bella - AJAX
+ * Plugin URI:      https://github.com/mdibella-dev/mdb-theme-ajax
  * Author:          Marco Di Bella
  * Author URI:      https://www.marcodibella.de
  * Description:     AJAX driven shortcodes and classes for displaying lectures, publications and blog articles. Intended to use with the theme mdb-theme-fse.
