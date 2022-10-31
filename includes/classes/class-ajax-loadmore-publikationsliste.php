@@ -96,7 +96,7 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
 
     static function get_replacements( $post )
     {
-        $part = mdb_tc__publication__build_citation( $post->ID, MDB_BUILD_ARRAY );
+        $part = \mdb_theme_core\publication__build_citation( $post->ID, MDB_BUILD_ARRAY );
 
         // Create replacement terms
         $replacements = array(
