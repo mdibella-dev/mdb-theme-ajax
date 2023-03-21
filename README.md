@@ -1,15 +1,28 @@
 # mdb-theme-ajax
 AJAX driven shortcodes and classes for displaying lectures, publications and blog articles. Intended to use with the theme mdb-theme-fse.
 
-__Contributors:__ mdibella-dev
+<br>
 
-__Tags:__  custom-post-types, ajax, oop, shortcodes, classes
+## Development Info
 
-__Requires at least:__ WordPress 5.3  
+### Contributors
+[Marco Di Bella ](https://github.com/mdibella-dev)
 
-__Tested up to:__ WordPress 6.0  
+### Tags
+custom-post-types, ajax, oop, shortcodes, classes
+
+### Requires at least
+
+* WordPress 5.3
+
+### Tested up to
+
+* WordPress 6.0
+
+<br>
 
 ## Changelog
+
 *Added/Changed/Fixed/Removed*
 
 
