@@ -9,7 +9,7 @@ AJAX driven shortcodes and classes for displaying lectures, publications and blo
 [Marco Di Bella ](https://github.com/mdibella-dev)
 
 ### Tags
-custom-post-types, ajax, oop, shortcodes, classes
+custom-post-types, ajax, oop, shortcodes, classes, translation-ready
 
 ### Requires at least
 
@@ -27,10 +27,14 @@ custom-post-types, ajax, oop, shortcodes, classes
 
 
 ### 1.1.0
+Released: 12-08-2022
+
 * Added: prepare_output() in class AJAX_LoadMore
 * Added: namespace mdb_theme_ajax
 * Added: translation support
 
 
 ### 1.0.0
+Released: 29-07-2022
+
 * Initial commit
