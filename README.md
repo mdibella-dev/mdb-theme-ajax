@@ -23,7 +23,7 @@ custom-post-types, ajax, oop, shortcodes, classes, translation-ready
 
 ## Changelog
 
-*Added/Changed/Fixed/Removed*
+*Added / Changed / Fixed / Removed*
 
 
 ### 1.1.0
